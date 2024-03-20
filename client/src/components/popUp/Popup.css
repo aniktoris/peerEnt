@@ -1,0 +1,42 @@
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-button {
+  color: var(--teal-bg);
+  border: 1px solid transparent;
+  padding: 8px 30px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--pink);
+}
+
+.popup-button:hover {
+  background-color: var(--teal);
+  color: var(--teal-bg);
+}
+
+.popup-button:hover {
+  transform: translateY(3px);
+}

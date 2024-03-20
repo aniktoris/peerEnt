@@ -1,0 +1,145 @@
+.item {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--emerald-bg);
+  box-shadow: 0 4px 8px rgba(0, 128, 128, 0.3);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  color: var(--teal);
+}
+
+.item_image {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.item_renter-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.item_renter-info {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 2px solid var(--teal);
+}
+
+.item_title {
+  color: var(--teal-bg);
+  background-color: var(--teal);
+  font-size: 3vw;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_detail {
+  color: var(--teal);
+}
+
+.item_label {
+  font-weight: bold;
+  background-color: var(--pink-bg);
+  padding: 5px;
+  border-bottom: 1px solid var(--pink);
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align buttons to the right */
+  border-top: 2px solid var(--pink);
+  padding-top: 20px;
+  margin-top: 20px; /* Move margin-top here if you want to consolidate it */
+}
+
+/* Button styling */
+.rent,
+.chat {
+  color: var(--teal-bg);
+  border: 1px solid transparent;
+  padding: 8px 30px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--pink);
+}
+
+.rent:hover,
+.chat:hover {
+  background-color: var(--teal);
+  color: var(--teal-bg);
+}
+
+.rent:hover,
+.chat:hover {
+  transform: translateY(3px);
+}
+
+/* Interactive Effects & Feedback */
+.loader {
+  border: 4px solid #f3f3f3;
+  /* Light grey */
+  border-top: 4px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  color: #d8000c;
+  background-color: #ffbaba;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.item_info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.item_label {
+  font-weight: bold;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .item {
+    padding: 15px;
+  }
+
+  .item_title {
+    font-size: 20px;
+  }
+}

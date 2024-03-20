@@ -1,0 +1,49 @@
+input.file-input {
+  border: solid 2px rgb(255, 127, 178);
+  margin-top: -13px;
+  margin-bottom: -20px;
+}
+
+form {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.upload-text {
+  margin-left: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-button {
+  color: white;
+  font-size: 14px;
+  background-color: var(--pink);
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: var(--pink-hover);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification {
+  text-align: center;
+  font-size: 12px;
+}
+
+.upload-image {
+  max-width: 60%;
+  max-height: 60%;
+}

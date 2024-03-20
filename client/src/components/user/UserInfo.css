@@ -1,0 +1,107 @@
+.your-product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  padding: 50px 200px;
+  background-color: var(--teal);
+  border-radius: 30px;
+}
+
+.items-title {
+  color: var(--pink);
+  text-align: center;
+  padding: 50px;
+  margin: 20px 250px;
+  border: 2px dashed var(--pink);
+  border-radius: 10px;
+  background-color: var(--pink-bg);
+  transition: margin 0.3s, font-size 0.3s;
+}
+.items-title:hover {
+  margin-left: 160px;
+  margin-right: 160px;
+  font-size: 1.8em;
+}
+
+.empty-message,
+.loading-message,
+.error-message {
+  color: var(--teal-bg);
+  background-color: var(--teal);
+  border: 2px dashed var(--teal);
+  text-align: center;
+  padding: 200px 50px;
+  margin: 20px 20px;
+  border-radius: 30px;
+}
+
+.user-profile-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  margin: 20px;
+  border: 2px dashed var(--pink);
+  border-radius: 10px;
+  background-color: var(--teal-bg);
+}
+
+.user-image img {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details h1 {
+  color: var(--pink);
+  margin: 0;
+  font-size: 40px;
+}
+
+.user-details p {
+  color: var(--teal);
+  margin: 0;
+}
+
+.payment-message {
+  color: darkred;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top: -8px;
+}
+
+.container-listed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--pink-bg);
+  transition: transform 0.3s ease;
+}
+
+.container-listed:hover {
+  transform: translateY(-5px);
+}
+
+.container-listed.inactive {
+  opacity: 0.5;
+}
+
+.container-listed button {
+  padding: 10px 20px;
+  background-color: var(--teal);
+  color: var(--pink);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.container-listed button:hover {
+  background-color: var(--pink);
+  color: var(--teal);
+}

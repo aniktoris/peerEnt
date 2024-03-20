@@ -1,0 +1,73 @@
+footer {
+  background-color: aquamarine;
+  display: flex;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.column img {
+  width: 160px;
+  padding-left: 20px;
+}
+
+.description {
+  font-size: 14px;
+  margin-left: 33px;
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
+.copyright {
+  font-size: 10px;
+  margin-left: 33px;
+}
+
+.contact {
+  padding-top: 10px;
+}
+
+.contact {
+  color: #134e4a;
+}
+
+.column svg {
+  margin: 20px 0;
+  margin-left: 3px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.email,
+.phone {
+  color: black;
+}
+
+.email:hover {
+  color: pink;
+}
+
+.phone:hover {
+  color: pink;
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .column {
+    margin: 1px 1px;
+    padding: 1px 1px;
+  }
+
+  .column svg {
+    margin: 0 0;
+  }
+}

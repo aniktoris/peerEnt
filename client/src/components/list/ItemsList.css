@@ -1,0 +1,122 @@
+.product-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.product-item:hover {
+  background-color: var(--pink-bg);
+  transition: background-color 0.3s ease;
+}
+
+.product-item__owner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: var(--pink-bg);
+  border-radius: 20px;
+}
+
+.product-item__owner img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.product-item__owner span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+.product-item__name span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7b7676;
+}
+
+.product-item__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+
+.product-item__name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.product-item__description {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+.product-item__view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-item__price {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--emerald);
+}
+
+.product-item__view-button {
+  background-color: var(--pink);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.link-btn {
+  text-decoration: none;
+}
+.product-item__view-button:hover {
+  background-color: var(--pink-hover);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+  margin: 10px auto;
+  padding: 0px 100px;
+  background-color: var(--teal-bg);
+}
+/* pagination style */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination button {
+  background-color: var(--pink);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: rgb(157, 153, 153);
+  cursor: not-allowed;
+}

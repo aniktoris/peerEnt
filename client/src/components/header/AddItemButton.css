@@ -1,0 +1,31 @@
+.add-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.add-item-link {
+  text-decoration: none;
+}
+
+.add-item-icon-container {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.add-item-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.add-item-icon-container:hover {
+  transform: scale(1.1);
+  background-color: var(--teal);
+}

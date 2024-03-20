@@ -1,0 +1,45 @@
+.categories {
+  font-size: 14px;
+  background-color: #82e4c3;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.list-categories {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.list-categories :hover,
+.list-categories li.selected-category {
+  background-color: #3bb38b;
+}
+
+.list-categories li {
+  flex: 0 0 calc(16.666% - 10px);
+  margin: 5px;
+  background-color: white;
+  border-radius: 7px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  height: 25px;
+  width: 30px;
+  padding-left: 5px;
+}
+
+.list-categories li span {
+  padding-left: 8px;
+}
+
+@media (max-width: 600px) {
+  .list-categories li {
+    flex: 0 0 calc(25% - 10px);
+  }
+}

@@ -1,0 +1,12 @@
+.pricey {
+  max-width: 800px;
+  margin: 90px auto;
+  padding: 20px;
+  background: url("https://assets.service.jetbrains.space/static/177128/br/0846f8517fd3ba607f21.svg")
+    no-repeat center var(--emerald-bg);
+  background-size: contain;
+  box-shadow: 0 4px 8px rgba(0, 128, 128, 0.3);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  color: var(--teal);
+}

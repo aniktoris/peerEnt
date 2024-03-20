@@ -1,0 +1,96 @@
+.container {
+  /* background-color: rgb(255, 127, 178); */
+  padding: 10px;
+  margin: 10px;
+}
+h2 {
+  margin-top: 30px;
+  color: rgb(255, 127, 178);
+}
+
+.post-item-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  border-radius: 6px;
+  background-color: var(--pink-bg);
+}
+
+.label-checkbox input {
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.label-checkbox input[type="checkbox"] {
+  width: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-color: rgb(255, 127, 178);
+  margin-top: 5px;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-color: rgb(255, 127, 178);
+  cursor: pointer;
+}
+
+option {
+  color: var(--teal);
+  cursor: pointer;
+  background-color: var(--pink-bg);
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: 20px;
+}
+
+.option:hover {
+  background-color: var(--pink);
+}
+
+option:checked {
+  background-color: var(--emerald);
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}

@@ -1,0 +1,26 @@
+.sidebar {
+  animation: slideInFromLeft 2s forwards;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  transition: left 2s ease-in-out;
+  height: 100%;
+  background-color: rgba(4, 47, 46, 0.5);
+  z-index: 2000;
+  padding: 15px;
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 80%;
+  }
+}
